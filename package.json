@@ -1,0 +1,19 @@
+{
+  "name": "com.liveparty.dicerolling",
+  "version": "1.0.0",
+  "displayName": "DiceRolling",
+  "description": "\u4e0e\u63b7\u9ab0\u5b50\u6982\u7387\u5206\u5e03\u4e00\u81f4\u7684\u968f\u673a\u6570\u751f\u6210\u5668",
+  "unity": "2019.4",
+  "unityRelease": "15f1",
+  "keywords": [
+    "dice",
+    "random",
+    "integer"
+  ],
+  "author": {
+    "name": "Yao_Zhengji",
+    "email": "973237581@qq.com"
+  },
+  "type": "sample",
+  "hideInEditor": false
+}
