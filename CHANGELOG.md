@@ -7,12 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.0] - 2020-12-09
 ### Added
-- OneDiceRolling可以传入修正值
-- MultiDicesRolling可以传入修正值
 - PairdVaryDiceRolling：成对地掷多个骰子
 
 ### Changed
--
+- OneDiceRolling可以传入修正值
+- MultiDicesRolling可以传入修正值
 
 ### Removed
 - 
@@ -24,8 +23,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 正式发布
 
 
-
-[1.1.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.3.0...v1.0.0
-[1.0.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.2.0...v0.3.0
+https://github.com/MonsTao/DiceRolling
 ```
 
