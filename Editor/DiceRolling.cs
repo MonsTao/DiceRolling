@@ -28,6 +28,10 @@ public class DiceRolling : MonoBehaviour
         int pip = BaseRolling(numberOfFace);
         return pip;
     }
+    public int OneDiceRolling(int numberOfFace,int addition)
+    {
+        return (OneDiceRolling(numberOfFace) + addition);
+    }
 
     /// <summary>
     /// 传入两个整数，依次为骰子数量n和骰子面数m，返回nDm的结果
@@ -35,7 +39,7 @@ public class DiceRolling : MonoBehaviour
     /// <param name="numberOfDice"></param>
     /// <param name="numberOfFace"></param>
     /// <returns></returns>
-    public int MuitiDicesRolling(int numberOfDice,int numberOfFace)
+    public int MultiDicesRolling(int numberOfDice,int numberOfFace)
     {
         if (numberOfDice < 1)
         {
@@ -48,6 +52,11 @@ public class DiceRolling : MonoBehaviour
             sum += OneDiceRolling(numberOfFace);
         }
         return sum;
+    }
+
+    public int MultiDicesRolling(int numberOfDice, int numberOfFace,int addition)
+    {
+        return (MultiDicesRolling(numberOfDice, numberOfFace) + addition);
     }
 
     /// <summary>
@@ -113,6 +122,32 @@ public class DiceRolling : MonoBehaviour
         return sum;
     }
 
-
+    /// <summary>
+    /// 传入偶数个正整数，每次取两个数n和m，骰nDm，返回总和。
+    /// </summary>
+    /// <param name="vs"></param>
+    /// <returns></returns>
+    public int PairdVaryDiceRolling(params int[] vs)
+    {
+        if (vs.Length % 2 == 1)
+        {
+            Debug.LogError("应当传入偶数个正整数");
+            return 0;
+        }
+        int sum = 0;
+        int numOfDice = 0;
+        for (int i = 0; i < vs.Length; i++)
+        {
+            if (i % 2 == 0)
+            {
+                numOfDice = vs[i];
+            }
+            else
+            {
+                sum += (numOfDice * vs[i]);
+            }
+        }
+        return sum;
+    }
 
 }
